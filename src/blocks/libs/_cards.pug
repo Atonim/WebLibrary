@@ -1,0 +1,9 @@
+- var hllowbook={'id': '0', 'title': 'Книга', 'sub': 'Описание'}
+
+mixin card(book=hllowbook)
+  .card
+    +img('book.jpg', 'node.js', 'card-img-top')
+    .card-body
+      h5.card-title= book.title
+      p.card-text= book.sub
+    +link('Подробнее', '/book', 'btn btn-primary')

@@ -1,0 +1,11 @@
+mixin main(value= 'Список книг', books)
+  .main.p-4
+    h2.text-center.p-3= value 
+    if block
+      block 
+    else
+      +checkbox('flexCheckDefault', 'В наличии')
+      .row 
+        - for (var x = 0; x < books.length; x++)
+          .col-2 
+            +card(books[x])

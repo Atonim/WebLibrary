@@ -1,0 +1,4 @@
+mixin checkbox(id='flexCheckDefault', text='', type='checkbox', role='')
+  .form-check
+    input.form-check-input(type=`${type}` value='' role=`${role}` id=`${id}`)
+    label.form-check-label(for=`${id}`)= text

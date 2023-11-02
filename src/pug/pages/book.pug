@@ -1,0 +1,10 @@
+extends ../layout.pug
+
+block variables
+  - var accItems=[]
+  - var footItems_1=[{'Home':'index.html'},{'Main':'main.html'},{'About':'about.html'}]
+
+block content
+  +header
+  +main('book')
+  +footer(footItems_1)
